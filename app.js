@@ -1,15 +1,4 @@
-const getLength = (nestedArray) => {
-    let array = nestedArray.flat(Infinity);
-    let arrayLength;
-    if (array.length === 0) {
-        arrayLength = 0;
-        return arrayLength;
-    } else {
-        arrayLength = array.length;
-        return arrayLength;
-    }
-}
-
+const getLength = (nestedArray) => nestedArray.flat(Infinity).length;
 
 array1 = [1, [2, 3]];
 array2 = [1, [2, [3, 4]]];
